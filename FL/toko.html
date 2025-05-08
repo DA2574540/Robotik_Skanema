@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotik Team Skanema</title>
+    <link rel="shortcut icon" href="gambar/logo robotik.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="berita.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+          <div class="logo">
+            <img src="gambar/logo robotik.png" alt="Logo" class="logo-image">
+            <span>Robotik Skanema</span>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="#">Berita</a></li>
+              <li><a href="#rocket">Karya</a></li>
+              <li><a href="#rocket">Toko</a></li>
+            </ul>
+          </nav>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </header>
+
+    <section class="news-hero">
+        <h1 class="hero-title">Berita & Updates</h1>
+        <p>Ikuti perkembangan terbaru dari RED Space</p>
+    </section>
+
+    <main class="news-container">
+        <div class="news-filters">
+            <button class="filter-button active" data-category="all">Semua</button>
+            <button class="filter-button" data-category="teknologi">Teknologi</button>
+            <button class="filter-button" data-category="misi">Misi</button>
+            <button class="filter-button" data-category="penelitian">Penelitian</button>
+        </div>
+
+        <div class="news-grid">
+            <article class="news-card" data-category="teknologi">
+                <img src="gambar/logo robotik.png" alt="gambar" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">15 Oktober 2023</div>
+                    <h2 class="news-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                    <p class="news-excerpt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptatem repellendus facilis sed, ducimus, ea ratione ab ad inventore nam consectetur iure architecto pariatur asperiores nesciunt incidunt expedita veniam eos!</p>
+                    <a href="#" class="read-more">Baca selengkapnya</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="misi">
+                <img src="gambar/logo robotik.png" alt="gambar" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">28 September 2023</div>
+                    <h2 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    <p class="news-excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil laboriosam quasi adipisci, voluptatem doloremque enim, nobis, ducimus necessitatibus accusantium sit ipsa molestias expedita esse ipsum. Corrupti laboriosam inventore ad.</p>
+                    <a href="#" class="read-more">Baca selengkapnya</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="penelitian">
+                <img src="gambar/logo robotik.png" alt="gambar" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">10 Agustus 2023</div>
+                    <h2 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+                    <p class="news-excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit, animi, id, a cum eum quod aliquam quam ratione laborum in corporis! Dolor veritatis veniam, nam voluptatum ducimus exercitationem. Facilis.</p>
+                    <a href="#" class="read-more">Baca selengkapnya</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const newsCards = document.querySelectorAll('.news-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+
+                    // Show all cards if 'all' is selected, otherwise filter
+                    newsCards.forEach(card => {
+                        if (category === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            if (card.getAttribute('data-category') === category) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
