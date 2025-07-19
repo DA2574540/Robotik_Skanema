@@ -45,7 +45,7 @@ nav{
 }
 
 .welcome{
-    padding-top: 75px;
+    padding-top: 101px;
     /* height: 1005px; */
     width: 1059px;
     margin: auto;
@@ -53,23 +53,23 @@ nav{
     text-align: center;
 
     img{
-        width: 250px;
+        width: 328px;
         padding-top: 61px;
     }
 
     h1{
-        padding-top: 48px;
-        font-size: 58px;
+        padding-top: 58px;
+        font-size: 64px;
     }
 
     h3{
-        padding-top: 37px;
-        font-size: 30px;
+        padding-top: 67px;
+        font-size: 36px;
     }
 
     h5{
-        padding-top: 19px;
-        font-size: 20px;
+        padding-top: 29px;
+        font-size: 24px;
         font-weight: 100;
         width: 900px;
         margin: auto;
