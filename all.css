@@ -142,7 +142,7 @@ nav{
 footer{
     background-color: #000000;
     color: white;
-    height: 65px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,6 +208,68 @@ footer{
         #aktif:checked ~ .nav-item{
             /* right: 0px; */
             display: flex;
+        }
+    }
+
+    .welcome{
+        padding-top: 75px;
+        height: 1000px; /*untuk sementara saja*/
+        margin: auto;
+        text-align: center;
+
+        img{
+            width: 228px;
+            padding-top: 61px;
+        }
+
+        h1{
+            padding-top: 28px;
+            font-size: 34px;
+        }
+
+        h3{
+            padding-top: 17px;
+            font-size: 20px;
+        }
+
+        h5{
+            padding-top: 19px;
+            font-size: 14px;
+            font-weight: 400;
+            /* width: 90vw; */
+            /* margin: auto; */
+        }
+
+        .select-button{
+            margin-top: 60px;
+            margin-bottom: 80px;
+
+            button{
+                width: 226px;
+                height: 61px;
+                border-radius: 7px;
+                margin-left: 31px;
+                margin-right: 3%;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .b1{
+                background-color: #FFCC00;
+            }
+
+            .b2{
+                background-color: #000000;
+                color: white;
+            }
+
+            .b1:hover{
+                background-color: #e7b900;
+            }
+
+            .b2:hover{
+                background-color: #202020;
+            }
         }
     }
 }
