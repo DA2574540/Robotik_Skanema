@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Robotic</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header-title {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <img src="../gambar/logo robotik.png" alt="Logo Kiri" />
+            <div class="header-title">Pendaftaran Robotic <br> SMKN 5 BATAM</div>
+            <img src="elind.png" alt="Logo Kanan" />
+        </div>
+    </header>
+
+    <div id="notif"></div>
+
+    <form class="form-container" id="pendaftaranForm">
+        <h2>Formulir Pendaftaran</h2>
+
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required />
+        </div>
+
+        <div class="form-group">
+            <label for="kelas">Kelas</label>
+            <input type="text" id="kelas" name="kelas" placeholder="X ELIND 1" required />
+        </div>
+
+        <div class="form-group">
+            <label for="jenis_kelamin">Jenis Kelamin</label>
+            <select id="jenis_kelamin" name="jenis_kelamin" required>
+                <option value="">-- Pilih --</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tempat_lahir">Tempat Lahir</label>
+            <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Batam" required />
+        </div>
+
+        <div class="form-group">
+            <label for="tanggal_lahir">Tanggal Lahir</label>
+            <input type="text" id="tanggal_lahir" name="tanggal_lahir" placeholder="DD-MM-YYYY" required />
+        </div>
+
+        <div class="form-group">
+            <label for="nomer">No HP</label>
+            <input type="number" id="nomer" name="nomer" placeholder="08xxxxxxxxxx" required />
+        </div>
+
+        <div class="form-button">
+            <button type="reset" class="btn-danger">Reset</button>
+            <button type="submit" class="btn-primary" id="submit">Submit</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>
+            &copy; 2025 Robotic SMKN 5 Batam dan Qoirul Iman Nurianto</span>
+            <a href="#" id="link" target="_blank"> • Kunjungi kami</a>
+        </p>
+    </footer>
+
+    <script src="./aset/script.js"></script>
+</body>
+
+</html>
