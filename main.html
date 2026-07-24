@@ -10,41 +10,27 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <img src="gambar/logo robotik.png" alt="logo">
-            <p>Robotik Skanema</p>
-            <p class="mobile">Robotik Skanema</p>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="gambar/logo robotik.png" alt="Logo" class="logo-image">
+                <span>Robotik Skanema</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="main.html">Beranda</a></li>
+                    <li><a href="#projek.html">Projek</a></li>
+                    <li><a href="#tutorial.html">Tutorial</a></li>
+                    <li><a href="#anggota.html">Anggota</a></li>
+                    <li><a href="#kontak.html">Kontak</a></li>
+                    <li><a href="#toko.html">Toko</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
         </div>
-        
-
-        <input type="checkbox" name="cek" id="aktif">
-        <!-- <input type="radio" name="cek" id="tutup"> -->
-        <label for="aktif" class="buka">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-            </svg>
-        </label>
-
-        <div class="overlay"></div>
-
-        <div class="nav-item">
-            <!-- <div class="box"></div> -->
-            <li>
-                <label for="aktif" class="tutup">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
-                        <path
-                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg>
-                </label>
-                <a href="#">Beranda</a>
-                <a href="tes.html">Proyek</a>
-                <a href="tes.html">Tim</a>
-                <a href="tes.html">Galeri</a>
-                <a href="tes.html">Kontak</a>
-            </li>
-        </div>
-    </nav>
+    </header>
 
     <div class="welcome">
         <img src="gambar/logo robotik.png" alt="logo">
@@ -55,18 +41,45 @@
 
         <div class="select-button">
             <a href="tes.html"><button class="b1">Pelajari Lebih Lanjut</button></a>
-            <a href="tutup.html"><button class="b2">Gabung Sekarang</button></a>
+            <a href="pendaftaran/index.html"><button class="b2">Gabung Sekarang</button></a>
         </div>
     </div>
 
-    <div class="about">
-        <!-- <h3>Sekilas Tentang kami</h3> -->
+    <div id="tentang" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>SEKILAS TENTANG KAMI</h2>
+                <p>Kami adalah kelompok yang terdiri dari orang-orang penggila teknologi dan selalu ingin tau bagaimana
+                    dunia ini bekerja. <br> kalau gak percaya, coba aja masuk.</p>
+                <!-- <a href="#" class="about-button">PELAJARI SEJARAH KAMI</a> -->
+            </div>
+            <div class="about-image" style="background-image: url('gambar/logo\ robotik.png');"></div>
+        </div>
     </div>
 
+    <!-- <div class="dokumentasi">
+      <h1>Dokumentasi Kegiatan Kami</h1>
+      <div class="dokumentasi-card">
+        <img src="gambar/logo robotik.png" alt="">
+      </div>
+    </div> -->
+
     <footer>
-        <p>&copy;Robotik Skanema</p>
+        <p>&copy;Robotik Skanema 2026 | All Rights Reserved</p>
         <!-- <a href="">Kontak</a> -->
     </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.main-nav');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+
 </body>
 
 </html>

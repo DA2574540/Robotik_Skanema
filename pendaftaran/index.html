@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- qoirul iman nurianto -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Pendaftaran Ekstrakurikuler Robotik SMKN 5 Batam</title>
+    <meta name="description" content="Formulir pendaftaran resmi Ekstrakurikuler Robotik SMKN 5 Batam. Bergabunglah dan kembangkan skill teknologi serta keahlian robotika kamu di sini!" />
+    <meta name="keywords" content="Pendaftaran Robotik, SMKN 5 Batam, Robotik Batam, Ekstrakurikuler SMKN 5 Batam, ELIND SMKN 5 Batam" />
+    <meta name="author" content="Robotic SMKN 5 Batam" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- WhatsApp & Open Graph Tags -->
+    <meta property="og:site_name" content="Robotic SMKN 5 Batam" />
+    <meta property="og:title" content="Pendaftaran Ekstrakurikuler Robotik SMKN 5 Batam" />
+    <meta property="og:description" content="Bergabunglah bersama komunitas Robotik SMKN 5 Batam. Daftar sekarang!" />
+    <meta property="og:url" content="https://cheery-dragon-5f898d.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Link Gambar Netlify Lengkap -->
+    <!-- tolong url nya sesuai sama url yg di netlify yg gambar juga sesuai in pakai /pendaftran/robotik.png kalau di tarok di 1 folder mu -->
+     
+    <meta property="og:image" content="https://cheery-dragon-5f898d.netlify.app/robotik.png" />
+    <meta property="og:image:secure_url" content="https://cheery-dragon-5f898d.netlify.app/robotik.png" /> 
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+
+    <!-- Twitter Card Tags (Diperlukan oleh beberapa versi WA) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pendaftaran Ekstrakurikuler Robotik SMKN 5 Batam" />
+    <meta name="twitter:description" content="Bergabunglah bersama komunitas Robotik SMKN 5 Batam. Daftar sekarang!" />
+    <meta name="twitter:image" content="https://cheery-dragon-5f898d.netlify.app/robotik.png" />
+
+    <!-- Google Fonts & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <img src="./robotik.png" alt="Logo Ekstrakurikuler Robotik SMKN 5 Batam" />
+            <h1 class="header-title">Pendaftaran Robotic <br> SMKN 5 BATAM</h1>
+            <img src="./elind.png" alt="Logo Elektronika Industri SMKN 5 Batam" />
+        </div>
+    </header>
+
+    <div id="notif" role="alert"></div>
+
+    <main class="form-container">
+        <h2>Formulir Pendaftaran</h2>
+
+        <form id="pendaftaranForm">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Contoh: Qoirul Iman" required />
+            </div>
+
+            <div class="form-group">
+                <label for="kelas">Kelas</label>
+                <input type="text" id="kelas" name="kelas" placeholder="Contoh: X ELIND 1" required />
+            </div>
+
+            <div class="form-group">
+                <label for="nomer">No HP / WhatsApp</label>
+                <input type="number" id="nomer" name="nomer" placeholder="08123123123" required />
+            </div>
+
+            <div class="form-button">
+                <button type="reset" class="btn-danger">Reset</button>
+                <button type="submit" class="btn-primary" id="submit">
+                    <span class="btn-text">Submit</span>
+                    <span class="spinner" id="spinner"></span>
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 Robotic SMKN 5 Batam
+            <a href="/" id="link"> • Kunjungi kami</a>
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
