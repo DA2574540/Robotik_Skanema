@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 notif.style.backgroundColor = "#10cf76c5";
                 notif.innerHTML = `
                     Terima kasih telah mendaftarkan diri Anda untuk Ekstrakurikuler Robotik.<br>
-                    <a href="https://chat.whatsapp.com/FNGk1vBzwjfDIPNVL7f7fl" target="_blank" rel="noopener noreferrer">
+                    <a href="https://chat.whatsapp.com/FIUkgNJuKM6659qC4DLHxZ" target="_blank" rel="noopener noreferrer">
                         Klik di sini untuk bergabung ke grup WhatsApp
                     </a> untuk info lebih lanjut.
                 `;
